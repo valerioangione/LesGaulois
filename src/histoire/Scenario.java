@@ -1,5 +1,6 @@
 package histoire;
 
+import personnages.Equipement;
 import personnages.Gaulois;
 import personnages.Romain;
 
@@ -13,6 +14,13 @@ public class Scenario {
 		asterix.frapper(minus);
 		asterix.frapper(minus);
 		asterix.frapper(minus);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
+		asterix.frapper(romain);
+		asterix.toString();
+		asterix.boirePotion(6);
 	}
 
 }
