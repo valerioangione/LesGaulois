@@ -28,5 +28,21 @@ public class Village {
 		return villageois[numVillageois];
 	}
 	
-	public static
+	public void afficherVillageois(Village village) {
+		System.out.println(chef)
+		for (int i=0 , i < nbVillageois , i++) {
+			System.out.println(villageois[i])
+		}
+	}
+	
+	public static void main(String[] args) {
+		Village village = new Village("village des irréductibles", 30);
+		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
+		Gaulois asterix = new Gaulois( "asterix" , 8 );
+		Chef setChef=abraracourcix;
+		Gaulois ajouterHabitant=asterix;
+		Gaulois gaulois = village.trouverHabitant(0);
+		System.out.println(gaulois);
+		Gaulois obelix = new Gaulois("Obélix", 25);
+	}
 }
